@@ -30,6 +30,21 @@ dependencies {
     implementation("io.ktor:ktor-serialization:1.6.4")
     implementation("io.ktor:ktor-server-content-negotiation-jvm:$ktor_version")
     implementation("io.ktor:ktor-serialization-kotlinx-json-jvm:$ktor_version")
+    implementation("io.ktor:ktor-html-builder:1.6.4")
     testImplementation("io.ktor:ktor-server-tests-jvm")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version")
+
+    // Ktor Test Library
+    testImplementation("io.ktor:ktor-server-test-host:1.6.6")
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.0")
+    testImplementation("io.ktor:ktor-client-mock:1.6.6")
+
+    // JUnit for testing
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.8.1")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.8.1")
+
+    testImplementation("io.ktor:ktor-server-test-host:$ktor_version")
+    testImplementation("io.ktor:ktor-client-mock:$ktor_version")
+    testImplementation("junit:junit:4.13.2") // for JUnit tests
+
 }
